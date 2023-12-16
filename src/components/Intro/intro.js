@@ -10,7 +10,6 @@ import git from '../../assects/git Skillsimg.png'
 import power from '../../assects/powershell Skillsimg.png'
 import office from '../../assects/office Skillsimg.png'
 import linux from '../../assects/linux Skillsimg.png'
-
 const Intro = () => {
   return (
     <section id='intro'>
@@ -27,15 +26,14 @@ const Intro = () => {
             challenges to make significant contributions in a goal-driven environment which offers responsibility with 
             scope for further development.</p>
             <Link><button className='btn'><img src={ btnimg } alt="" className='btnimg'/>Download RM</button></Link>
-
             <div className="skillsImg">
-            <a href=""><img src={ aws} alt="" /></a>
-            <a href=""><img src={azure} alt="" /></a>
-            <a href=""><img src={exchange} alt="" /></a>
-            <a href=""><img src={git} alt="" /></a>
-            <a href=""><img src={office} alt="" /></a>
-            <a href=""><img src={linux} alt="" /></a>
-            <a href=""><img src={power} alt="" /></a>
+            <a href="#"><img src={ aws} alt="" /></a>
+            <a href="#"><img src={azure} alt="" /></a>
+            <a href="#"><img src={exchange} alt="" /></a>
+            <a href="#"><img src={git} alt="" /></a>
+            <a href="#"><img src={office} alt="" /></a>
+            <a href="#"><img src={linux} alt="" /></a>
+            <a href="#"><img src={power} alt="" /></a>
             </div>
         </div>
         <img src={ aboutimg } alt="" className='aboutimg' />
