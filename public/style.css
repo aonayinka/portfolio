@@ -10,7 +10,15 @@
 
 body{
     background: rgb(30, 30, 30);
-    color: white;
+    color: rgb(255, 255, 255);
     overflow: hidden;
     overflow-y: scroll;
 }
+/* body::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    left: 30%;
+    background-color: rgb(133, 176, 162);
+    z-index: -1;
+} */
