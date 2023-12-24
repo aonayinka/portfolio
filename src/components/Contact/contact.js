@@ -29,9 +29,9 @@ const Contact = () => {
                 <h1 className='contactPageTitle'>Contact Me</h1>
                 <span className='contactDesc'>Please fill out the form beelow if you have any quistion or just want to give adive </span>
                 <form className='contactForm' ref={form} onSubmit={sendEmail}>
-                    <input type="text" className='name' placeholder='Your Name' name='from_name' />
+                    <input type="text" className='name' placeholder='Your Name' name='from_name'/>
                     <input type="email" className="email" placeholder='Your Email' name='your_email'/>
-                    <textarea className='msg' name="message" rows="5" placeholder='Your Message'></textarea>
+                    <textarea className='msg' name="message" rows="5" placeholder='Your Message' spellCheck="true"></textarea>
                     <button type='submit' value='send' className="submitBtn">Submit</button>
                     <div className="link">
                         <img src={inst} alt="" className="link" />

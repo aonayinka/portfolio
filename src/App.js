@@ -3,7 +3,8 @@ import Intro from "./components/Intro/intro"
 import Skills from "./components/skill/skills";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/footer/footer";
-import Passgen from "./components/password gen/passgen";
+import Passgen from "./components/Projects/passgen";
+import React from "react";
 
 
 function App() {

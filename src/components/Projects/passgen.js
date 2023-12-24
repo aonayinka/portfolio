@@ -10,6 +10,12 @@ import './passgen.css'
 import copyic from "../../assects/copyIcon.png"
 import {number, upperCaseLetters,lowerCaseLetters, specialCharacters} from './characters'
 
+// react installed search-icon
+import {FaSearch} from "react-icons/fa";
+
+
+
+
 const Passgen = () => {
     const [password, setPassword] = useState('')
     const [passwordLenght, setPasswordLenght] = useState(20)
@@ -98,8 +104,45 @@ const Passgen = () => {
     // end of copy function  
 
 
+
+
+// start of searchBar
+
+const [input, setinput] = useState("")
+const fetchData = (value) => {
+    fetch("https://jsonplaceholder.typicode.com/users").then((response) => response.json())
+    .then((json) => {
+        const results = json.filter((user) => {
+            return (value && user && user.name && user.name.toLowerCase().includes(value)) 
+        });
+        console.log(results);
+    });
+}
+const handleChange = (value) => {
+    setinput(value)
+    fetchData(value)
+}
+// To need to finish off 
+
+
+
+
+
   return (
-    <div className='contatiner'>
+    <section id='projects'>
+        {/* Search Bar Porject Start */}
+         <div className='search-bar-container'>
+        <div className='input-wrap'>
+            <FaSearch id='search-icon'/>
+            <input placeholder='Search Here...'value={input} onChange={(e) => handleChange(e.target.value)}/>
+        </div>
+        
+        <div></div>
+    </div>
+
+
+
+            <div className='contatiner'>
         <div className="generator">
             <h2 className='generator_header'>Password Generator</h2>
             <div className="generator_password">
@@ -157,6 +200,10 @@ const Passgen = () => {
         </div>
     </div>
    
+
+
+
+    </section>   
   )
 }
 

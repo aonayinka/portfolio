@@ -10,9 +10,8 @@
     border-radius: 3px;
     box-shadow: 0px 2px 10px rgb(255,255,255);
     padding: 20px;
-    width: 40%;
     position: absolute;
-    right: 40%;
+    left: 10%;
 }
 .generator_header{
     text-align: center;
@@ -55,4 +54,42 @@
     justify-content: space-between;
     color: white;
     margin-bottom: 15px;
+}
+
+
+/* Start SearchBra */
+.search-bar-container{
+    padding-top: 10vh ;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    color: white;
+}
+.input-wrap{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    align-items: center;
+}
+#search-icon{
+    color: black;
+}
+
+.input-wrap input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 5px;
+}
+.input-wrap input:focus{
+    outline: none;
 }
