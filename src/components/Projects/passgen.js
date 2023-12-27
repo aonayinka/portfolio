@@ -108,41 +108,14 @@ const Passgen = () => {
 
 // start of searchBar
 
-const [input, setinput] = useState("")
-const fetchData = (value) => {
-    fetch("https://jsonplaceholder.typicode.com/users").then((response) => response.json())
-    .then((json) => {
-        const results = json.filter((user) => {
-            return (value && user && user.name && user.name.toLowerCase().includes(value)) 
-        });
-        console.log(results);
-    });
-}
-const handleChange = (value) => {
-    setinput(value)
-    fetchData(value)
-}
-// To need to finish off 
 
 
 
 
 
   return (
-    <section id='projects'>
-        {/* Search Bar Porject Start */}
-         <div className='search-bar-container'>
-        <div className='input-wrap'>
-            <FaSearch id='search-icon'/>
-            <input placeholder='Search Here...'value={input} onChange={(e) => handleChange(e.target.value)}/>
-        </div>
-        
-        <div></div>
-    </div>
-
-
-
-            <div className='contatiner'>
+    <section id='projects'className='project'>
+    <div className='contatiner'>
         <div className="generator">
             <h2 className='generator_header'>Password Generator</h2>
             <div className="generator_password">
@@ -198,10 +171,9 @@ const handleChange = (value) => {
                 theme="light"
             />
         </div>
+
+
     </div>
-   
-
-
 
     </section>   
   )
