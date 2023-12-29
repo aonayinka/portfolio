@@ -1,6 +1,5 @@
 // I installed react Tostify this is for notification.
 
-
 import{toast, ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import {COPY_SUCCESS} from './message'
