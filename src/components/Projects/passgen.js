@@ -10,9 +10,6 @@ import './passgen.css'
 import copyic from "../../assects/copyIcon.png"
 import {number, upperCaseLetters,lowerCaseLetters, specialCharacters} from './characters'
 
-// react installed search-icon
-import {FaSearch} from "react-icons/fa";
-
 
 
 
@@ -102,15 +99,6 @@ const Passgen = () => {
         }
     }
     // end of copy function  
-
-
-
-
-// start of searchBar
-
-
-
-
 
 
   return (
