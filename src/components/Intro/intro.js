@@ -17,7 +17,7 @@ const Intro = () => {
         <div className="introContent">
             <span className='hello'>Hello,</span>
             <span className="intotext">Im <span className="intorname">Ayodeji</span> <br /> Cloud Engineer / Web Designer </span>
-            <p className="intropar">A reliable customer-focused IT Analyst with a broad range of 
+            <p className="intropar" >A reliable customer-focused IT Analyst with a broad range of 
             <br />operational and IT support skills.Regular contribution of ideas <br />
             and solutions for changes to IT helpdesk processes and quality <br />
             procedures brings about significant progress within <br />
@@ -38,6 +38,15 @@ const Intro = () => {
             </div>
         </div>
         <img src={ aboutimg } alt="" className='aboutimg' />
+
+        <div className='search-bar-container'>
+          <div className='searchBar'>
+            <h1>searchBar</h1>
+          </div>
+            <div>searchResults</div>
+          
+          
+        </div>
     </section>
    
   )
