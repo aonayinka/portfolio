@@ -10,6 +10,7 @@ import git from '../../assects/git Skillsimg.png'
 import power from '../../assects/powershell Skillsimg.png'
 import office from '../../assects/office Skillsimg.png'
 import linux from '../../assects/linux Skillsimg.png'
+
 const Intro = () => {
   
   return (
@@ -26,7 +27,8 @@ const Intro = () => {
             implementing the team's collective goals. Currently seeking new career 
             challenges to make significant contributions in a goal-driven environment which offers responsibility with 
             scope for further development.</p>
-            <Link><button className='btn'><img src={ btnimg } alt="" className='btnimg'/>Download RM</button></Link>
+
+            <Link><a href={`${process.env.PUBLIC_URL}/Ayodeji2024.pdf`} download><button className='btn'><img src={ btnimg } alt='' className='btnimg'/>Download RM</button></a></Link>
             <div className="skillsImg">
             <a href><img src={ aws}  alt="" /></a>
             <a href><img src={azure} alt="" /></a>
