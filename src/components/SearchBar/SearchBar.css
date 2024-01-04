@@ -3,6 +3,13 @@
     position: relative;
     left: 40%;
 }
+
+@media screen and (max-width:840px){
+    .search{
+        position: relative;
+        left: 20%;
+    }
+}
 .searchInputs{
     margin-top: 10px;
     display: flex;
@@ -65,3 +72,4 @@ input:focus{
 #clearBtn{
     cursor: pointer;
 }
+

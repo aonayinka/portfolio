@@ -28,9 +28,9 @@ const Intro = () => {
             challenges to make significant contributions in a goal-driven environment which offers responsibility with 
             scope for further development.</p>
 
-            <Link><a href={`${process.env.PUBLIC_URL}/Ayodeji2024.pdf`} download><button className='btn'><img src={ btnimg } alt='' className='btnimg'/>Download RM</button></a></Link>
+            <Link><button className='btn'><img src={ btnimg } alt='' className='btnimg'/>Download RM</button></Link>
             <div className="skillsImg">
-            <a href><img src={ aws}  alt="" /></a>
+            <a href><img src={aws}  alt="" /></a>
             <a href><img src={azure} alt="" /></a>
             <a href><img src={exchange} alt="" /></a>
             <a href><img src={git} alt="" /></a>
