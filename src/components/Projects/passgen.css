@@ -1,17 +1,27 @@
-.contatiner{
+#project{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
     margin: 0 auto;
-    padding: 40px;
+    overflow: hidden;
+    position: relative;
+
+}
+.contatiner{
+    width: 100vw;
+    padding: 7rem;
     font-family: monospace, cursive;
     box-sizing: border-box;
     min-height: 50vh;
 }
 .generator{
+    width: 30vw;
     background: #618EA8ff;
     border-radius: 3px;
     box-shadow: 0px 2px 10px rgb(255,255,255);
-    padding: 20px;
+    padding: 10px;
     position: absolute;
-    left: 15%;
+    left: 18%;
 }
 .generator_header{
     text-align: center;

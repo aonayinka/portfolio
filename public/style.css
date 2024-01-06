@@ -13,6 +13,7 @@ body{
     color: rgb(255, 255, 255);
     overflow: hidden;
     overflow-y: scroll;
+    
 }
 /* body::after{
     position: absolute;

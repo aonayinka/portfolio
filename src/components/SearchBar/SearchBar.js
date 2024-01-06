@@ -1,4 +1,3 @@
-// import { useState } from "react";
 // import React from 'react';
 // import "./SearchBar.css";
 // import SearchIcon from '@mui/icons-material/Search';
@@ -48,57 +47,83 @@
 // }
 
 // export default SearchBar
-import React, { useState } from "react";
-import "./SearchBar.css";
+import React, { useState } from 'react';
+import './SearchBar.css';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 
 function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
-  const [wordEntered, setWordEntered] = useState("");
+  const [wordEntered, setWordEntered] = useState('');
 
   const handleFilter = (event) => {
-    const searchWord = event.target.value;
+    const searchWord = event.target.value.toLowerCase();
     setWordEntered(searchWord);
-    const newFilter = data.filter((value) => {
-      return value.company.toLowerCase().includes(searchWord.toLowerCase());
-    });
 
-    if (searchWord === "") {
+    if (searchWord === '') {
       setFilteredData([]);
     } else {
+      const newFilter = data.filter((profile) => {
+        return (
+          profile.name.toLowerCase().includes(searchWord) ||
+          profile.location.toLowerCase().includes(searchWord) ||
+          profile.professionalSummary.toLowerCase().includes(searchWord) ||
+          profile.experience.some((exp) =>
+            exp.responsibilities.some((resp) =>
+              resp.toLowerCase().includes(searchWord)
+            )
+          )
+        );
+      });
+
       setFilteredData(newFilter);
     }
   };
 
   const clearInput = () => {
     setFilteredData([]);
-    setWordEntered("");
+    setWordEntered('');
   };
 
   return (
-    <div className="search">
-      <div className="searchInputs">
+    <div className='search'>
+      <div className='searchInputs'>
         <input
-          type="text"
+          type='text'
           placeholder={placeholder}
           value={wordEntered}
           onChange={handleFilter}
         />
-        <div className="searchIcon">
+        <div className='searchIcon'>
           {filteredData.length === 0 ? (
             <SearchIcon />
           ) : (
-            <CloseIcon id="clearBtn" onClick={clearInput} />
+            <CloseIcon id='clearBtn' onClick={clearInput} />
           )}
         </div>
       </div>
       {filteredData.length !== 0 && (
-        <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
+        <div className='dataResult'>
+          {filteredData.map((value, key) => {
             return (
-              <div className="dataItem">
-                <p>{value.company} </p>
+              <div key={key} className='dataItem'>
+                <p>
+                  Name: {value.name} - Location: {value.location}
+                </p>
+                <p>Summary: {value.professionalSummary}</p>
+                <p>
+                  Experience:
+                  {value.experience.map((exp, expKey) => (
+                    <div key={expKey}>
+                      {exp.company} ({exp.position}, {exp.date})
+                      <ul>
+                        {exp.responsibilities.map((resp, respKey) => (
+                          <li key={respKey}>{resp}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </p>
               </div>
             );
           })}

@@ -27,7 +27,7 @@ const Contact = () => {
         <section id='contactPage'>
             <div id="contact">
                 <h1 className='contactPageTitle'>Contact Me</h1>
-                <span className='contactDesc'>Please fill out the form beelow if you have any quistion or just want to give adive </span>
+                <span className='contactDesc'>Please complete the form below for any inquiries or feedback you may have.</span>
                 <form className='contactForm' ref={form} onSubmit={sendEmail}>
                     <input type="text" className='name' placeholder='Your Name' name='from_name'/>
                     <input type="email" className="email" placeholder='Your Email' name='your_email'/>
@@ -36,7 +36,7 @@ const Contact = () => {
                     <div className="link">
                         <img src={inst} alt="" className="link" />
                         <img src={face} alt="" className="link" />
-                        <img src={lkin} alt="" className="link" />
+                        <a href="https://www.linkedin.com/in/ayodeji-onayinka-215930282/"><img src={lkin} alt="" className="link" /></a>
                         <img src={twix} alt="" className="link" />
                     </div>
                 </form>
