@@ -8,6 +8,17 @@
     margin-top: 4rem;
     position: relative;
 }
+@media screen and (max-width:840px){
+  .Updates{  
+    width: 360px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+
+  }
+}
 .Az-Card{
     width: 400px;
     overflow: hidden;
@@ -27,6 +38,7 @@
     height: 200px;
     margin-top: 1rem;
 }
+
 .card-content{
     margin: 1rem;
     margin-top: 0.5rem;

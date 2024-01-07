@@ -1,6 +1,7 @@
 import React from 'react'
 import './toknow.css'
 import azstatic from '../../assects/azStatic.png'
+import json from '../../assects/json.png'
 
 const Toknow = () => {
   return (
@@ -35,27 +36,21 @@ const Toknow = () => {
       </div>
 
       <div className="Az-Card">
-      <div class="loader">
-        <div data-glitch="Loading..." class="glitch">Loading...</div>
-      </div>
-        {/* <div className="img-container">
-          <img src={azstatic} alt="azImg" />
+        <div className="img-container">
+          <img src={json} alt="azImg" />
         </div>
         <div className="card-content">
          <div className="card-title">
-           <h3>Azure Static Web App </h3>
+           <h3>Search Bar </h3>
          </div>
           <div className="card-body">
-          <p>I just wanted to let you know that this website is currently being hosted on Azure 
-          as a Static Web App. The website files are pulled in from a Github repository. 
-          To achieve this, I followed Microsoft's documentation to fix some of the issues that 
-          occurred during the CI/CD process, as I was trying to get the website published. 
-          If you are interested, this is one of the failed commits on Github: 
-           <a href="https://github.com/aonayinka/portfolio/actions/runs/7358252159/workflow">https://github.com/aonayinka/<br/>portfolio/actions/runs/7358252159/
-           workflow.</a></p>
+          <p>I am currently working on fixing the search bar. 
+          Clients should be able to search for keywords on my resume, 
+          which is stored as a JSON file. However, I am experiencing issues 
+          with displaying the search results correctly.</p>
           </div>
           
-        </div> */}
+        </div>
        
         {/* <div className="butn">
           <button>

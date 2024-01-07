@@ -2,17 +2,20 @@
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
-    margin: 0 auto;
+    margin: 1 auto;
     overflow: hidden;
     position: relative;
 
 }
 .contatiner{
     width: 100vw;
-    padding: 7rem;
+    padding: 9rem;
     font-family: monospace, cursive;
-    box-sizing: border-box;
-    min-height: 50vh;
+    min-height: 40vh;
+
+}
+@media screen and (max-width:840px){
+  
 }
 .generator{
     width: 30vw;
@@ -22,6 +25,7 @@
     padding: 10px;
     position: absolute;
     left: 18%;
+
 }
 .generator_header{
     text-align: center;
