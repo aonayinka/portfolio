@@ -146,6 +146,7 @@ const Passgen = () => {
             <button onClick={handleGenetartePassword}  className='generator_btn'>Generate Password</button>
 
             <ToastContainer
+            
                 position="top-center"
                 autoClose={5000}
                 hideProgressBar={false}

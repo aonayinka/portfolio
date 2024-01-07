@@ -10,14 +10,37 @@ import git from '../../assects/git Skillsimg.png'
 import power from '../../assects/powershell Skillsimg.png'
 import office from '../../assects/office Skillsimg.png'
 import linux from '../../assects/linux Skillsimg.png'
+import { TypeAnimation } from 'react-type-animation';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Intro = () => {
   
   return (
     <section id='intro'>
-        <div className="introContent">
-            <span className='hello'>Welcome,</span>
-            <span className="intotext">Im <span className="intorname">Ayodeji</span> <br /> Cloud Engineer / Web Designer </span>
+        <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" className="introContent">
+            <span className='hello'> 
+            {/* Text Animationa from react-type-animation  */}
+            <TypeAnimation
+              sequence={[
+               'Hello', // Types 'One'
+                1000, // Waits 1s
+               'Welcome', 
+                2000,
+                'Im Ayodeji',
+                9000,
+                () => {
+                },
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              style={{ fontSize: '2em', display: 'inline-block', color: 'red' }}
+              />
+            </span>
+            <span className="intotext"> Cloud Engineer / Web Designer </span>
             <p className="intropar" >As a technical engineer, I have been keen to expand my skills and knowledge in the 
             field of web and cloud engineering. With the ever-increasing demand for websites and cloud applications, it has become
              evident that having expertise in this area is becoming more and more valuable. Throughout my journey, 
