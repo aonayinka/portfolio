@@ -68,7 +68,7 @@
     cursor: pointer;
 }
 .skillsImg a:hover{
-    transform: scale(1.2);
+    transform: scale(1.7);
 }
 
 @media screen and (max-width:840px) {

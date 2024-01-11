@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/navbar";
 import Intro from "./components/Intro/intro"
 import Contact from "./components/Contact/contact";
 import Footer from "./components/footer/footer";
-import Passgen from "./components/Projects/passgen";
+// import Passgen from "./components/Projects/passgen";
 import React from "react";
 import SearchBar from "./components/SearchBar/SearchBar";
 import CvData from "./AyosCV.json";
@@ -16,7 +16,7 @@ function App() {
       <Intro/>
       <SearchBar placeholder="Enter a keyword...." data = {CvData}/>
       <Toknow/>
-      <Passgen/>
+      {/* <Passgen/> */}
       <Contact/>
       <Footer/>
      
