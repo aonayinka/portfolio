@@ -20,7 +20,7 @@ const Intro = () => {
   
   return (
     <section id='intro'>
-        <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" className="introContent">
+        <div className="introContent">
             <span className='hello'> 
             {/* Text Animationa from react-type-animation  */}
             <TypeAnimation
@@ -49,6 +49,7 @@ const Intro = () => {
              forward to the challenges and opportunities that lie ahead.</p>
 
             <Link><button className='btn'><img src={ btnimg } alt='' className='btnimg'/>Download RM</button></Link>
+            
             <div className="skillsImg">
             <a href><img src={aws}  alt="" /></a>
             <a href><img src={azure} alt="" /></a>

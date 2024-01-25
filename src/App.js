@@ -4,9 +4,10 @@ import Contact from "./components/Contact/contact";
 import Footer from "./components/footer/footer";
 // import Passgen from "./components/Projects/passgen";
 import React from "react";
-import SearchBar from "./components/SearchBar/SearchBar";
-import CvData from "./AyosCV.json";
+// import SearchBar from "./components/SearchBar/SearchBar";
+// import CvData from "./AyosCV.json";
 import Toknow from "./components/Time/toKnow";
+import QuotesGen from "./components/QuotesGen/QuotesGen";
 
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
     <div className="App">
       <Navbar/>
       <Intro/>
-      <SearchBar placeholder="Enter a keyword...." data = {CvData}/>
+      {/* <SearchBar placeholder="Enter a keyword...." data = {CvData}/> */}
       <Toknow/>
+      <QuotesGen/>
       {/* <Passgen/> */}
       <Contact/>
       <Footer/>
