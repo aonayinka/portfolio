@@ -1,6 +1,5 @@
 import React from 'react';
 import './intro.css';
-import { Link } from 'react-scroll';
 import btnimg from '../../assects/Introbtn.png'
 import aboutimg from '../../assects/introimg.png'
 import aws from '../../assects/awsSkillsimg.png'
@@ -17,7 +16,13 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
 const Intro = () => {
-  
+
+  const openPDF = () => {
+    // Replace 'path_to_your_pdf' with the actual path to your PDF file
+    const pdfPath = '/Users/casamigos/Documents/portfolio/src/assects/Ayodeji2024.pdf';
+    window.open(pdfPath, '_blank');
+    };
+
   return (
     <section id='intro'>
         <div className="introContent">
@@ -48,7 +53,10 @@ const Intro = () => {
              myself with frameworks like ReactJs. I am excited to continue my growth as a web and cloud engineer and look 
              forward to the challenges and opportunities that lie ahead.</p>
 
-            <Link><button className='btn'><img src={ btnimg } alt='' className='btnimg'/>Download RM</button></Link>
+              <button onClick={openPDF} className='btn'>
+                  <img src={btnimg} alt='pdf' className='btnimg'/>
+                  Download RM
+                 </button>
             
             <div className="skillsImg">
             <a href><img src={aws}  alt="" /></a>
