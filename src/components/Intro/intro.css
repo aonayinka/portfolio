@@ -68,7 +68,7 @@
     border: none;
     cursor: pointer;
 }
-.skillsImg a:hover{
+.skillsImg :hover{
     transform: scale(1.7);
 }
 
