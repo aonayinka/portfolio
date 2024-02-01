@@ -1,6 +1,6 @@
 
 .quotesGen{
-    height: 30vh;
+    height: 30dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +26,9 @@
     height: 582px;
     font-size: 25px;
     font-weight: 600;
+    position: relative;
+    overflow-wrap: break-word;
+
 }
 .button {
     position: relative;
