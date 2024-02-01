@@ -22,8 +22,8 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     font-size: 18px;
-    padding: 20px;
-    height: 30px;
+    padding: 10px;
+    height: 20px;
     width: 300px;
 }
 .searchIcon{
@@ -44,8 +44,8 @@ input:focus{
 }
 .dataResult{
     margin-top: 5px;
-    width: 400px;
-    height: 200px;
+    width: 700px;
+    height: 400px;
     background-color: white;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
     overflow: hidden;

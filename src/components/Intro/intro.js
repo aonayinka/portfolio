@@ -59,13 +59,13 @@ const Intro = () => {
                  </button>
             
             <div className="skillsImg">
-            <a href><img src={aws}  alt="" /></a>
-            <a href><img src={azure} alt="" /></a>
-            <a href><img src={exchange} alt="" /></a>
-            <a href><img src={git} alt="" /></a>
-            <a href><img src={office} alt="" /></a>
-            <a href><img src={linux} alt="" /></a>
-            <a href><img src={power} alt="" /></a>
+            <a ><img src={aws}  alt="" /></a>
+            <a ><img src={azure} alt="" /></a>
+            <a><img src={exchange} alt="" /></a>
+            <a><img src={git} alt="" /></a>
+            <a><img src={office} alt="" /></a>
+            <a><img src={linux} alt="" /></a>
+            <a><img src={power} alt="" /></a>
             </div>
         </div>
         <img src={ aboutimg } alt="" className='aboutimg' />
