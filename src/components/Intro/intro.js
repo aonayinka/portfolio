@@ -45,7 +45,7 @@ const Intro = () => {
               style={{ fontSize: '2em', display: 'inline-block', color: 'red' }}
               />
             </span>
-            <span className="intotext"> Cloud Engineer / Web Designer </span>
+            <span className="intotext"> Cloud Engineer / Front-End Dev </span>
             <p className="intropar" >As a technical engineer, I have been keen to expand my skills and knowledge in the 
             field of web and cloud engineering. With the ever-increasing demand for websites and cloud applications, it has become
              evident that having expertise in this area is becoming more and more valuable. Throughout my journey, 

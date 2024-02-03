@@ -6,6 +6,7 @@ class QuotesGen extends Component {
   state = {
     advice: '',
     error: '',
+    rating: null,
   };
 
   componentDidMount() {
@@ -17,16 +18,20 @@ class QuotesGen extends Component {
       .get('https://api.adviceslip.com/advice')
       .then((response) => {
         const { advice } = response.data.slip;
-        this.setState({ advice, error: '' });
+        this.setState({ advice, error: '', rating: null });
       })
       .catch((error) => {
         console.error('Error fetching advice:', error);
-        this.setState({ error: 'Failed to fetch advice. Please try again.' });
+        this.setState({ error: 'Failed to fetch advice. Please try again.', rating: null });
       });
   };
 
+  handleRatingChange = (rating) => {
+    this.setState({ rating });
+  };
+
   render() {
-    const { advice, error } = this.state;
+    const { advice, error, rating } = this.state;
     return (
       <div className='quotesGen'>
         <div className="card">
@@ -35,6 +40,7 @@ class QuotesGen extends Component {
           ) : (
             <>
               <h1 className='heading'>{advice}</h1>
+              <StarRating rating={rating} onRatingChange={this.handleRatingChange} />
               <button className='button' onClick={this.fetchAdvice}>
                 <span>New Advice!</span>
               </button>
@@ -45,5 +51,32 @@ class QuotesGen extends Component {
     );
   }
 }
+
+const Star = ({ selected = false, onClick }) => (
+  <span className="star" onClick={onClick}>
+    {selected ? "★" : "☆"}
+  </span>
+);
+
+class StarRating extends React.Component {
+  render() {
+    const { totalStars, rating, onRatingChange } = this.props;
+    return (
+      <div className="star-rating">
+        {[...Array(totalStars)].map((n, i) => (
+          <Star
+            key={i}
+            selected={i < rating}
+            onClick={() => onRatingChange(i + 1)}
+          />
+        ))}
+      </div>
+    );
+  }
+}
+
+StarRating.defaultProps = {
+  totalStars: 5,
+};
 
 export default QuotesGen;
