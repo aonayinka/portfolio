@@ -9,7 +9,9 @@
     margin-top: 4rem;
     position: relative;
     border: none;
-}
+    
+} 
+
 .Az-Card{
     width: 400px;
     overflow: hidden;
@@ -169,6 +171,11 @@ p{
   }
   
 
+  @media screen and (max-width:720px){
+    .Updates{
+      width: 90vw;
+  }
 
 
+  }
 

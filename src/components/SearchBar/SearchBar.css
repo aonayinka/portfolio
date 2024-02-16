@@ -1,7 +1,9 @@
 
 .search{
-    position: relative;
-    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
 }
 
 @media screen and (max-width:840px){

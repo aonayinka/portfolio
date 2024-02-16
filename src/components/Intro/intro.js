@@ -1,6 +1,5 @@
 import React from 'react';
 import './intro.css';
-import btnimg from '../../assects/Introbtn.png'
 import aboutimg from '../../assects/introimg.png'
 import aws from '../../assects/awsSkillsimg.png'
 import azure from '../../assects/azure Skillsimg.png'
@@ -17,11 +16,11 @@ AOS.init();
 
 const Intro = () => {
 
-  const openPDF = () => {
-    // Replace 'path_to_your_pdf' with the actual path to your PDF file
-    const pdfPath = '/Users/casamigos/Documents/portfolio/src/assects/Ayodeji2024.pdf';
-    window.open(pdfPath, '_blank');
-    };
+  // const openPDF = () => {
+  //   // Replace 'path_to_your_pdf' with the actual path to your PDF file
+  //   const pdfPath = '/Users/casamigos/Documents/portfolio/src/assects/Ayodeji2024.pdf';
+  //   window.open(pdfPath, '_blank');
+  //   };
 
   return (
     <section id='intro'>
@@ -45,18 +44,12 @@ const Intro = () => {
               style={{ fontSize: '2em', display: 'inline-block', color: 'red' }}
               />
             </span>
-            <span className="intotext"> Cloud Engineer / Front-End Dev </span>
-            <p className="intropar" >As a technical engineer, I have been keen to expand my skills and knowledge in the 
-            field of web and cloud engineering. With the ever-increasing demand for websites and cloud applications, it has become
-             evident that having expertise in this area is becoming more and more valuable. Throughout my journey, 
-             I have been learning various programming languages such as HTML, CSS, and JavaScript, as well as familiarizing 
-             myself with frameworks like ReactJs. I am excited to continue my growth as a web and cloud engineer and look 
-             forward to the challenges and opportunities that lie ahead.</p>
+            <span className="intotext">Focusing on Cloud Engineering,<br />Web Development. </span>
+            <p className="intropar" >With over 5 years of experience, 
+                    I specialize in creating visually stunning and user-friendly websites that 
+                    leave a lasting impression..</p>
 
-              <button onClick={openPDF} className='btn'>
-                  <img src={btnimg} alt='paper' className='btnimg'/>
-                  Download RM
-                 </button>
+              <button className='btn'>Contact Me </button>
             
             <div className="skillsImg">
             <img src={aws}  alt="" />
@@ -69,15 +62,6 @@ const Intro = () => {
             </div>
         </div>
         <img src={ aboutimg } alt="" className='aboutimg' />
-
-        <div className='search-bar-container'>
-          <div className='searchBar'>
-            <h1>searchBar</h1>
-          </div>
-            <div>searchResults</div>
-          
-          
-        </div>
     </section>
    
   )
