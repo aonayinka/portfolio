@@ -1,0 +1,112 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    max-width: 80rem;
+    background: transparent;
+    display: grid;
+    place-items: center;
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/* only shows on small screens */
+.nav__toggle-btn{
+    display: none;
+}
+.nav_container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    width: 10rem;
+    color: black;
+}
+.logo span{
+    color: red;
+    font-size: 40px;
+}
+.nav__links{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+.nav__links a{
+    transition: var(--transition);
+    color: black;
+
+}
+.nav__links a:hover {
+    color: red;
+}
+
+.active-nav{
+    position: relative;
+}
+.active-nav::after{
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: calc(50% - 0.6rem);
+    transform: rotate(45deg);
+    margin-top: 0.4rem;
+}
+
+
+/* Media Queries for small screen */
+
+@media screen and (max-width :1024px) {
+    .nav__toggle-btn {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .nav__toggle-btn svg{
+        color: rgb(255, 0, 0);
+        border: none;
+    }
+
+    .nav__links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .active-nav, .active-nav::after{
+        display: none;
+    }
+    .nav__links li {
+        height: 4rem;
+        width: 100%;
+        box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+    }
+    .nav__links li a {
+        background-color: rgb(216, 226, 229);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 5rem 1rem 3rem;
+    }
+    .show__nav{
+        display: flex;
+    }
+    .hid__nav{
+        display: none;
+    }
+
+    /* go back back to 1:10:00 for nav animation EGATOR */
+}
+

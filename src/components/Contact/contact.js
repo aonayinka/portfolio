@@ -33,12 +33,6 @@ const Contact = () => {
                     <input type="email" className="email" placeholder='Your Email' name='your_email'/>
                     <textarea className='msg' name="message" rows="5" placeholder='Your Message' spellCheck="true"></textarea>
                     <button type='submit' value='send' className="submitBtn">Submit</button>
-                    <div className="link">
-                        <img src={inst} alt="" className="link" />
-                        <img src={face} alt="" className="link" />
-                        <a href="https://www.linkedin.com/in/ayodeji-onayinka-215930282/"><img src={lkin} alt="" className="link" /></a>
-                        <img src={twix} alt="" className="link" />
-                    </div>
                 </form>
             </div>
         </section>

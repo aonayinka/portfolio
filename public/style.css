@@ -3,6 +3,11 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
 
 }
 
