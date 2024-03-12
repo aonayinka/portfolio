@@ -1,9 +1,5 @@
 import React, { useRef } from 'react'
 import './contact.css'
-import inst from '../../assects/instagram.png'
-import face from '../../assects/facebook.png'
-import lkin from '../../assects/linked.png'
-import twix from '../../assects/twitter.png'
 // emailjs for getting emails  on your website 
 import emailjs from '@emailjs/browser';
 
