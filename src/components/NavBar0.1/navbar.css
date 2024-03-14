@@ -27,6 +27,7 @@ nav{
 .logo{
     width: 10rem;
     color: black;
+    font-size: 40px;
 }
 .logo span{
     color: red;
