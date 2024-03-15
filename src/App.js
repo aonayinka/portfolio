@@ -8,6 +8,9 @@ import Projects from "./Pages/Projects";
 import Resume from "./Pages/Resume";
 import Blog from "./Pages/Blog";
 import ContactPage from "./Pages/ContactPage";
+import FAQs from "./Pages/FAQs";
+import Events from "./Pages/Events";
+
 
 
 function App() {
@@ -21,6 +24,8 @@ function App() {
         <Route path="/resume" element={<Resume/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
+        <Route Path="/faqs" element={<FAQs/>}/>
+        <Route path="/event" element={<Events/>}/>
       </Routes>
       <Footer1/>
     </BrowserRouter>
