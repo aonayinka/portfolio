@@ -45,7 +45,7 @@ const Intro = () => {
               />
             </span>
             <span className="intotext">Focusing on Cloud Engineering,<br />Web Development. </span>
-            <p className="intropar" >With over 5 years of experience, 
+            <p className="intropar" >With over 7 years of experience in IT, 
                     I specialize in creating visually stunning and user-friendly websites that 
                     leave a lasting impression..</p>
 
