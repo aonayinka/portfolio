@@ -1,6 +1,5 @@
 import Navbar from "./components/NavBar0.1/Navbar";
 import React from "react";
-// import Footer1 from "./components/Footer/Footer1";
 import { BrowserRouter, Routes,Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import About from "./Pages/About";
@@ -10,6 +9,7 @@ import Blog from "./Pages/Blog";
 import ContactPage from "./Pages/ContactPage";
 import FAQs from "./Pages/FAQs";
 import Events from "./Pages/Events";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -27,7 +27,7 @@ function App() {
         <Route Path="/faqs" element={<FAQs/>}/>
         <Route path="/event" element={<Events/>}/>
       </Routes>
-      {/* <Footer1/> */}
+      <Footer/>
     </BrowserRouter>
     
   );
