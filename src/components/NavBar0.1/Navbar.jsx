@@ -28,7 +28,6 @@ const Navbar = () => {
                     )
                 })}
             </ul>
-            <button className='nav__btn'>Contact Me</button>
             <button className="nav__toggle-btn" onClick={() => setIsNavShowing(prev => !prev )}>{
                 isNavShowing ? <IoMdClose /> : <FaBars />
             }

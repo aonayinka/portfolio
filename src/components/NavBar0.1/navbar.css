@@ -55,11 +55,11 @@ nav{
     display: block;
     width: 0.5rem;
     height: 0.5rem;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 0, 0);
     position: absolute;
-    left: calc(50% - 0.6rem);
+    left: calc(50% - 0.4rem);
     transform: rotate(45deg);
-    margin-top: 0.4rem;
+    margin-top: 1.8rem;
 }
 
 
