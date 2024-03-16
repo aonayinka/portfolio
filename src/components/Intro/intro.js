@@ -1,6 +1,5 @@
 import React from 'react';
 import './intro.css';
-import aboutimg from '../../assects/introimg.png'
 import aws from '../../assects/awsSkillsimg.png'
 import azure from '../../assects/azure Skillsimg.png'
 import exchange from '../../assects/exchange Skillsimg.png'
@@ -44,24 +43,22 @@ const Intro = () => {
               style={{ fontSize: '2em', display: 'inline-block', color: 'red' }}
               />
             </span>
-            <span className="intotext">Focusing on Cloud Engineering,<br />Web Development. </span>
-            <p className="intropar" >With over 7 years of experience in IT, 
-                    I specialize in creating visually stunning and user-friendly websites that 
-                    leave a lasting impression..</p>
+            <span className="intotext">Focusing on Cloud Engineering,Web Development. </span>
+            <p className="intropar" >A IT services analyst is shifting towards web development, 
+                                    aiming to broaden skills and contribute more effectively to digital projects.</p>
 
-              <button className='btn'>Contact Me </button>
+            <button className='btn'>Contact Me </button>
             
             <div className="skillsImg">
-            <img src={aws}  alt="" />
-            <img src={azure} alt="" />
-            <img src={exchange} alt="" />
-            <img src={git} alt="" />
-            <img src={office} alt="" />
-            <img src={linux} alt="" />
-            <img src={power} alt="" />
+              <img src={aws}  alt="" />
+              <img src={azure} alt="" />
+              <img src={exchange} alt="" />
+              <img src={git} alt="" />
+              <img src={office} alt="" />
+              <img src={linux} alt="" />
+              <img src={power} alt="" />
             </div>
         </div>
-        <img src={ aboutimg } alt="" className='aboutimg' />
     </section>
    
   )

@@ -5,28 +5,23 @@
     overflow: hidden;
     position: relative;
 }
-.aboutimg{
-    position: absolute;
-    top: 5rem;
-    right: -1rem;
-    z-index: -1;
-    object-fit: cover;
-    height: 70vh; 
-}
 
 .introContent{
-    height: 100vh;
+    height: 90vh;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
 .hello{
     font-size: 1.75rem;
     font-weight: 100;
 }
 .intotext{
     font-size: 2rem;
+    padding: 1rem;
 }
 .intorname{
     color: red;
@@ -34,13 +29,12 @@
 }
 
 .intropar{
-    font: 1rem;
+    font-size: 1.1rem;
     font-weight: 100;
-    max-width: 35rem;
     text-wrap: balance;
 }
 
-.btn{
+/* .btn{
     width: 160px;
     background: #618EA8ff;
     margin: 1rem 0;
@@ -48,12 +42,12 @@
     border: none;
     border-radius: 2rem;
     cursor: pointer;
-}
-.btnimg{
+} */
+/* .btnimg{
     object-fit: cover;
     margin: 0 0.25rem;
     height: 1rem;
-}
+} */
 
 .skillsImg{
     width: 40%;
