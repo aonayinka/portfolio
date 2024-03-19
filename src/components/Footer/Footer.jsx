@@ -15,7 +15,9 @@ const Footer = () => {
                     <span>Ay</span>Tec
                 </Link>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam omnis officia neque perferendis impedit nisi, vero illo quaerat? Facere excepturi vitae accusantium odit enim autem pariatur, consequatur harum laudantium itaque.
+                A reliable customer-focused IT Analyst with a broad range of operational and IT technical skills. Regular contribution of
+ideas and solutions for changes to IT helpdesk processes and quality procedures brings about significant progress
+within the Technical Team.
                 </p>
                 <div className="footer__socials">
                     <a href="https://linkedin.com" target='_black' rel='noreferrer noopener'>{<FaLinkedinIn />}</a>
