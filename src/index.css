@@ -1,3 +1,8 @@
+body{
+    background-image:url(../src/assects/AdobeStock_126953722.jpeg);
+    background-size: cover;
+
+}
 .btn{
     width: 160px;
     background: rgb(255, 0, 0);

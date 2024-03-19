@@ -44,8 +44,8 @@ const Intro = () => {
               />
             </span>
             <span className="intotext">Focusing on Cloud Engineering,Web Development. </span>
-            <p className="intropar" >A IT services analyst is shifting towards web development, 
-                                    aiming to broaden skills and contribute more effectively to digital projects.</p>
+            <h5 className="intropar" >A IT services analyst is shifting towards web development, 
+                                    aiming to broaden skills and contribute more effectively to digital projects.</h5>
 
             <button className='btn'>Contact Me </button>
             
