@@ -14,7 +14,16 @@
     justify-content: center;
     align-items: center;
 }
+.btn_into {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    gap: 2rem;
+}
 
+.btn_into>a{
+    text-decoration: none;
+}
 .hello{
     font-size: 1.75rem;
     font-weight: 100;
@@ -71,7 +80,9 @@
     }
     .skillsImg {
         display: none;
-    
-}
+    }
+    .intropar {
+        margin-left: 1rem;
+    }
 
 }

@@ -1,6 +1,11 @@
 import React from 'react'
 import './secondskills.css'
-import Gitimg from '../../assects/git Skillsimg.png'
+import { FaGitAlt } from "react-icons/fa";
+import { MdOutlineSecurity } from "react-icons/md";
+import { FaNetworkWired } from "react-icons/fa6";
+import { FaLaptopCode } from "react-icons/fa";
+import { TbCloudNetwork } from "react-icons/tb";
+import { MdOutlineWeb } from "react-icons/md";
 
 const SecondSkills = () => {
   return (
@@ -10,14 +15,14 @@ const SecondSkills = () => {
        <div className="skillBarContainer">
        <div className='skill__Bars'>
             <div className="skill__bar">
-                <img src={Gitimg} alt="" className='skillBarImg'/>
+                <FaLaptopCode className='skillBarImg' />
                 <div className="skillBar__text">
                     <h2>Programming Languages</h2>
                     <p>PowerShell, HTML5, CSS3, JavaScript,ReactJS </p>
                 </div>
             </div>
             <div className="skill__bar">
-                <img src={Gitimg} alt="" className='skillBarImg'/>
+                <MdOutlineSecurity className='skillBarImg'/>
                 <div className="skillBar__text">
                     <h2>Cybersecurity Awareness</h2>
                     <p>Understanding of cybersecurity principles and best practices, 
@@ -25,7 +30,7 @@ const SecondSkills = () => {
                          and risk mitigation strategies.</p>
                 </div>
             </div><div className="skill__bar">
-                <img src={Gitimg} alt="" className='skillBarImg' />
+                <FaGitAlt className='skillBarImg' />
                 <div className="skillBar__text">
                     <h2>Version Control:</h2>
                     <p>Familiarity with version control tools like Git, 
@@ -36,7 +41,7 @@ const SecondSkills = () => {
         </div>
         <div className='skill__Bars'>
             <div className="skill__bar">
-                <img src={Gitimg} alt="" className='skillBarImg'/>
+                <MdOutlineWeb className='skillBarImg' />
                 <div className="skillBar__text">
                     <h2>Web Dev Frameworks </h2>
                     <p>Experience with popular frameworks like React.js for front-end development, 
@@ -44,7 +49,7 @@ const SecondSkills = () => {
                 </div>
             </div>
             <div className="skill__bar">
-                <img src={Gitimg} alt="" className='skillBarImg'/>
+                <FaNetworkWired className='skillBarImg' />
                 <div className="skillBar__text">
                     <h2>Network:</h2>
                     <p>TCP/IP,DNS,DHCP also implemented and managed security systems, 
@@ -52,7 +57,7 @@ const SecondSkills = () => {
                         environment.</p>
                 </div>
             </div><div className="skill__bar">
-                <img src={Gitimg} alt="" className='skillBarImg' />
+                <TbCloudNetwork className='skillBarImg'/>
                 <div className="skillBar__text">
                     <h2>Cloud Platforms</h2>
                     <p>Experience of provisioning and managing cloud infrastructure in Microsoft Azure & Amazon AWS platforms.</p>

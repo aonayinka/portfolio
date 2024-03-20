@@ -47,8 +47,12 @@ const Intro = () => {
             <h5 className="intropar" >A IT services analyst is shifting towards web development, 
                                     aiming to broaden skills and contribute more effectively to digital projects.</h5>
 
-            <button className='btn'>Contact Me </button>
             
+            <div className='btn_into'>
+            <button className='btn'>Contact Me </button>
+            <button download="" href='' style={{textDecoration: 'none'}} className='btn'> Download CV </button>
+            </div>
+
             <div className="skillsImg">
               <img src={aws}  alt="" />
               <img src={azure} alt="" />
