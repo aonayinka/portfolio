@@ -8,7 +8,7 @@ const Home = () => {
       <Intro/>
       <Skills/>
       <SecondSkills/>
-    </>
+1    </>
   )
 }
 

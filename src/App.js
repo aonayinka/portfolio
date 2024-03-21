@@ -7,9 +7,9 @@ import Projects from "./Pages/Projects";
 import Resume from "./Pages/Resume";
 import Blog from "./Pages/Blog";
 import ContactPage from "./Pages/ContactPage";
-import FAQs from "./Pages/FAQs";
 import Events from "./Pages/Events";
 import Footer from "./components/Footer/Footer";
+import FAQ from "./Pages/FAQ";
 
 
 
@@ -24,8 +24,8 @@ function App() {
         <Route path="/resume" element={<Resume/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
-        <Route Path="/faqs" element={<FAQs/>}/>
         <Route path="/event" element={<Events/>}/>
+        <Route path="/faqs" element={<FAQ/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
