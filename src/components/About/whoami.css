@@ -1,0 +1,57 @@
+.about_container{
+    width: 100vw;
+    max-width: 80rem;
+    margin: 3rem auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.about_container_r{
+
+}
+.about_header >h1{
+    font-size: 8rem;
+    font-weight: 700;
+    width: 30%;
+    text-wrap: wrap;
+}
+.subHeader>h3{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+    padding: 1rem;
+}
+.about_paragraph>p{
+    width: 100%;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+.background_text{
+    font-size: 300px;
+    color: rgba(0, 0, 0, 0.158);
+    position: absolute;
+    z-index: -1;
+}
+.about_lowerContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.lowerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.about_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

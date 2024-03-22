@@ -21,6 +21,7 @@ const Contact = () => {
   return (
     <div>
         <section id='contactPage'>
+            <h1 className='sayhi'>SAY HI</h1>
             <div id="contact">
                 <h1 className='contactPageTitle'>Contact Me</h1>
                 <span className='contactDesc'>Please complete the form below for any inquiries or feedback you may have.</span>
@@ -28,7 +29,7 @@ const Contact = () => {
                     <input type="text" className='name' placeholder='Your Name' name='from_name'/>
                     <input type="email" className="email" placeholder='Your Email' name='your_email'/>
                     <textarea className='msg' name="message" rows="5" placeholder='Your Message' spellCheck="true"></textarea>
-                    <button type='submit' value='send' className="submitBtn">Submit</button>
+                    <button type='submit' value='send' className="btn">Submit</button>
                 </form>
             </div>
         </section>

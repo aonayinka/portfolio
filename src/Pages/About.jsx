@@ -1,12 +1,10 @@
 import React from 'react'
-import ComingSoon from '../components/ComingSoon/ComingSoon'
-import QuotesGen from '../components/QuotesGen/QuotesGen'
+import WhoAmI from '../components/About/WhoAmI'
 
 const About = () => {
   return (
     <>
-    <ComingSoon/>
-    <QuotesGen/>
+    <WhoAmI/>
     </>
   )
 }

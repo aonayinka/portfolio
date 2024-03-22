@@ -66,6 +66,7 @@ nav{
 /* Media Queries for small screen */
 
 @media screen and (max-width :1024px) {
+ 
     .nav__toggle-btn {
         display: inline-block;
         background: transparent;
@@ -104,10 +105,10 @@ nav{
         align-items: center;
         padding: 1rem 5rem 1rem 3rem;
     }
-    .show__nav{
+    .show_nav{
         display: flex;
     }
-    .hid__nav{
+    .hide_nav{
         display: none;
     }
 
