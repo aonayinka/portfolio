@@ -1,12 +1,10 @@
 import React from 'react'
-import ComingSoon from '../components/ComingSoon/ComingSoon'
-import QuotesGen from '../components/QuotesGen/QuotesGen'
+import ProgectPage from '../components/Projects/ProgectPage'
 
 const Projects = () => {
   return (
     <>
-    <ComingSoon/>
-    <QuotesGen/>
+    <ProgectPage/>
     </>
   )
 }
