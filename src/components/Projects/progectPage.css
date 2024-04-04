@@ -89,14 +89,14 @@
   .pp_container_right{
     display: flex;
     flex-direction: column;
-    align-items:start;
+    align-items:flex-start;
     gap: 1rem;
     width: 50%;
   }
   .pp_container_left{
     display: flex;
     flex-direction:row;
-    align-items:start;
+    align-items:flex-start;
     gap: 1rem;
     width: 50%;
   }
