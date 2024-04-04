@@ -56,7 +56,7 @@ const Intro = () => {
               <button className="btn">Contact Me </button>
             </Link>
             <a
-              href="../../assects/Ayodeji2024.pdf"
+              href="../../../Public/Ayodeji2023.pdf"
               download="Ayodeji2023.pdf"
               style={{ textDecoration: "none" }}>
               <button className="btn">Download CV</button>
