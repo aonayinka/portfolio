@@ -51,15 +51,17 @@ const Intro = () => {
         </h5>
 
         <div className="btn_into">
-          <Link to='/contact'><button className="btn">Contact Me </button></Link>
-          <button
-            download=""
-            href=""
-            style={{ textDecoration: "none" }}
-            className="btn">
-            {" "}
-            Download CV{" "}
-          </button>
+          <div className="btn_into">
+            <Link to="/contact">
+              <button className="btn">Contact Me </button>
+            </Link>
+            <a
+              href="../../assects/Ayodeji2024.pdf"
+              download="Ayodeji2023.pdf"
+              style={{ textDecoration: "none" }}>
+              <button className="btn">Download CV</button>
+            </a>
+          </div>
         </div>
 
         <div className="skillsImg">
